@@ -1,0 +1,186 @@
+html *
+{
+    padding:0px;
+    margin:0px;
+}
+body
+{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#e0dede;
+}
+
+.outer-box
+{
+    height:80%;
+    width:60%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:1rem;
+}
+
+.application
+{
+    height:100%;
+    width:70%;
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items:center;
+    background-color:rgb(255, 255, 255);
+    padding:1rem;
+    border-radius:10px;
+    box-shadow:0 0 8px 8px rgb(101, 100, 100);
+}
+
+h1
+{
+    text-align:center;
+}
+
+.details-box
+{
+    height:100%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2.5%;
+}
+
+.innerbox
+{
+    grid-column:span 1;
+}
+
+.address
+{
+    grid-column:1/-1;
+}
+
+
+
+input
+{
+    width:98%;
+    height:30%;
+    border:1px solid rgb(71, 70, 70);
+    border-radius:5px;
+    padding:0.5% 0 0.5% 1%;
+    &[placeholder]
+    {
+        font-size:1rem;
+    }
+}
+
+select
+{
+    width:98%;
+    height:30%;
+    border:1px solid rgb(71, 70, 70);
+    border-radius:5px;
+    font-size:1rem;
+    padding:0.5% 0 0.5% 1%;
+}
+
+/* Basic Reset */
+input, select 
+{
+    margin:0;
+    padding:1%;
+    border:1px solid rgb(71, 70, 70);
+    font: inherit;
+    font-size:1rem;
+    line-height: 1;
+    box-sizing: inherit;  /* Ensure consistent box-sizing */
+}
+
+.address>input
+{
+    height:65%;
+    padding:0.5% 0 0 1%;
+    width:99%;
+}
+
+
+label
+{
+    font-size:1.2rem;
+}
+
+button
+{
+    width:6rem;
+    height:2.5rem;
+    align-items:center;
+}
+
+.innerbox
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+button
+{
+    background-color:rgb(7, 152, 192);
+    border:0px;
+    border-radius:50px;
+    color:white;
+    font-size:1rem;
+}
+
+/* Adding Responsive to the website*/
+
+@media (max-width:480px)
+{
+    body
+    {
+        background-color:#e0dede;
+        width:100vw;
+        height:200vh;
+    }
+    .outer-box
+    {
+        width:100%;
+    }
+    .application
+    {
+        width:100%;
+        box-shadow:0 0 0 0;
+    }
+    
+}
+
+
+@media (max-width:768px)
+{
+    body
+    {
+        min-height:780px;
+        min-width:345px;
+    }
+    .outer-box
+    {
+        width:75%;
+        height:75%;
+    }
+    .details-box
+    {
+        display:grid;
+        grid-template-columns:1fr; 
+        gap:0px;
+    }
+    input
+    {
+        height:40%;
+    }
+    select
+    {
+        height:40%;
+    }
+}
+
