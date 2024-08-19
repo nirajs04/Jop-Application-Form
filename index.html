@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <!-- Link to the Stylesheet-->
+     <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="outer-box">
+        <div class="application">
+            <h1>Job Application</h1>
+            <div class="details-box">
+
+                <!--First name div-->
+                <div class="innerbox fname">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" type="text" placeholder="Enter First Name" required>
+                </div>
+
+                <!--Last name div-->
+                <div class="innerbox lname">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" type="text" placeholder="Enter Last Name" required>
+                </div>
+
+                <!--Email div -->
+                <div class="innerbox email">
+                    <label for="e-mail">Email</label>
+                    <input id="e-mail" type="email" placeholder="Enter Email Address" required>
+                </div>
+
+
+                <!--Job Role-->
+                <div class="innerbox jobrole">
+                    <label for="job-role">Job Role</label>
+                    <select id="job-role">
+                        <option value="">Select a Job Role</option>
+                        <option value="FullStack Developer" >FullStack Developer</option>
+                        <option value="Frontend Developer" >Frontend Developer</option>
+                        <option value="Backend developer" >Backend Developer</option>
+                        <option value="UI/UX Designer" > UI/UX Designer</option>
+                    </select>
+                </div>
+                <!-- Address div -->
+                 <div class="innerbox address">
+                    <label for="Address">Address</label>
+                    <input id="Address" type="text" placeholder="Enter Address" required>
+                 </div>
+                 <!-- City div -->
+                  <div class="innerbox city">
+                    <label for="City">City</label>
+                    <input id="City" type="text" placeholder="Enter City" required>
+                  </div>
+
+                  <!--  PinCode Div-->
+                    <div class="pincode innerbox">
+                        <label for="pin-code">Pincode</label>
+                        <input id="pin-code" type="number" placeholder="Enter Pincode" required>
+                    </div>
+
+                    <!--  date Div -->
+                      <div class="date innerbox">
+                        <label for="dates">Date</label>
+                        <input id="dates" type="date" required>
+                      </div>
+
+                    <!-- Upload Cv Div -->
+                     <div class="cv innerbox">
+                        <label for="upload" >Upload CV</label>
+                        <input id="upload" type="file" accept=".pdf .doc .docx" required>
+                     </div>
+            </div>
+            <!--Apply Button-->
+            <button type="submit">Apply Now</button>
+        </div>
+    </div>
+</body>
+</html>
